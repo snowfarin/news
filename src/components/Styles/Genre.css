@@ -1,0 +1,97 @@
+.genre a {
+  text-decoration: none;
+  color: black;
+}
+.genre {
+  margin: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.localnews__container {
+  align-items: center;
+  flex-grow: 1;
+  min-width: 30rem;
+  max-width: 33rem;
+  min-height: 50rem;
+  flex-basis: auto;
+}
+.india__container {
+  flex-grow: 1;
+  min-width: 30rem;
+  max-width: 33rem;
+  min-height: 50rem;
+  flex-basis: auto;
+}
+.world__container {
+  flex-grow: 1;
+  min-width: 30rem;
+  max-width: 33rem;
+  min-height: 50rem;
+  flex-basis: auto;
+}
+.business__container {
+  flex-grow: 1;
+  min-width: 30rem;
+  max-width: 33rem;
+  min-height: 50rem;
+  flex-basis: auto;
+}
+.tech__container {
+  flex-grow: 1;
+  min-width: 30rem;
+  max-width: 33rem;
+  min-height: 50rem;
+  flex-basis: auto;
+}
+.movies__container {
+  flex-grow: 1;
+  min-width: 30rem;
+  max-width: 33rem;
+  min-height: 50rem;
+  flex-basis: auto;
+}
+.sports__container {
+  flex-grow: 1;
+  min-width: 30rem;
+  max-width: 33rem;
+  min-height: 50rem;
+  flex-basis: auto;
+}
+.health__container {
+  flex-grow: 1;
+  min-width: 30rem;
+  max-width: 33rem;
+  min-height: 50rem;
+  flex-basis: auto;
+}
+
+.genre img {
+  height: 20rem;
+}
+
+.genre__container {
+  border: black dotted 1px;
+  margin: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 50rem;
+  overflow: scroll;
+}
+
+.othernews__ingenre {
+  width: 80%;
+  font-size: 1.5rem;
+  height: auto;
+  border-bottom: black dotted 1px;
+}
+
+@media only screen and (max-width: 550px) {
+  .genre__container {
+    min-width: 39rem;
+    align-items: center;
+  }
+}

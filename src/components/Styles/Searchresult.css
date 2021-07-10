@@ -1,0 +1,9 @@
+.forpadding a {
+  text-decoration: none;
+  color: black;
+}
+
+.forborder {
+  margin: 1rem;
+  border-bottom: solid 1px black;
+}

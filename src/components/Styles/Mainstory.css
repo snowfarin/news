@@ -1,0 +1,24 @@
+.mainstory a {
+  text-decoration: none;
+}
+
+.mainstory h1 {
+  font-size: 4rem;
+  color: white;
+}
+
+.carousel-item {
+  height: 40rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+.carousel-item {
+  font-size: 1.5rem;
+}

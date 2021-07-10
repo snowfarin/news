@@ -1,0 +1,256 @@
+.navbarContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+.accounticon {
+  font-size: 3rem;
+}
+
+.burgericon {
+  display: none;
+}
+
+.burger {
+  display: none;
+  margin-right: 1rem;
+}
+.burger > button {
+  display: none;
+  position: absolute;
+  left: 0;
+  padding: 0.2rem;
+  z-index: 5;
+  opacity: 0;
+}
+
+.slideleft {
+  position: absolute;
+  top: 0;
+  transform: translate(-100%);
+  min-height: 100vh;
+  min-width: 80vw;
+  overflow: scroll;
+  background-color: rgba(0, 0, 0, 0.493);
+}
+.slideleft > ul {
+  height: 100%;
+  align-items: center;
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.slideleft > ul > li {
+  padding: 3rem;
+  color: rgb(255, 255, 255);
+  font-size: 3rem;
+  list-style: none;
+}
+.slideleft > a {
+  color: white;
+}
+.navbar__options {
+  min-height: 10rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__options > li {
+  margin-right: 5rem;
+  font-size: 2rem;
+  font-weight: 800;
+  list-style: none;
+  text-align: center;
+}
+
+.navbarContainer input {
+  padding: 1rem;
+  margin: 0;
+  border: crimson 1px solid;
+}
+
+.navbarContainer button {
+  margin: 1rem;
+  padding: 1rem;
+  width: 90%;
+  border: none;
+  background: white;
+}
+
+.navbar__genre {
+  position: sticky;
+  top: 0;
+  background: crimson;
+  min-height: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar__genre > li {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  list-style: none;
+  flex: 1;
+  text-align: center;
+}
+
+.toggle .line1 {
+  transform: rotateZ(45deg) translateY(300%);
+  background: white;
+}
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotateZ(-45deg) translateY(-300%);
+  background: white;
+}
+
+.searchhere {
+  display: none;
+}
+
+.navbar h1 {
+  font-size: 4rem;
+  font-weight: 900;
+}
+.Aboutlogo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.Aboutlogo li {
+  margin-left: 5rem;
+  font-size: 3rem;
+  color: black;
+}
+
+.navbar__options a {
+  font-weight: 900;
+  text-decoration: none;
+  font-size: 2rem;
+  color: black;
+}
+
+.navbar__genre a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.slideleft a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.uparrow {
+  background: red;
+  border-radius: 50%;
+  color: aliceblue;
+  position: fixed;
+  margin-right: 8rem;
+  margin-bottom: 11rem;
+  bottom: 0;
+  right: 0;
+  font-size: 2rem;
+  padding: 3rem;
+  box-shadow: 3px 3px 13px 5px rgba(70, 69, 69, 0.2),
+    3px 3px 13px 5px rgba(145, 143, 143, 0.075);
+}
+
+@media only screen and (max-width: 550px) {
+  .navbar {
+    background: crimson;
+    min-width: 100vw;
+  }
+
+  .burgericon {
+    display: block;
+  }
+  .burger {
+    z-index: 3;
+    margin-left: 1rem;
+    position: relative;
+    display: block;
+    cursor: pointer;
+  }
+  .burger span {
+    padding: 0.2rem 0.2rem;
+    background: white;
+    margin: 0.5rem 0rem;
+    width: 3rem;
+    display: block;
+    transition: all 0.5s ease;
+  }
+
+  .burger > button {
+    display: block;
+  }
+
+  .isActive {
+    z-index: 2;
+    transform: translate(0%);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .navbar__options > li {
+    color: white;
+    font-size: calc(1.6rem - 0.5vh);
+    font-weight: 600;
+  }
+  .navbar__genre {
+    display: none;
+  }
+
+  .searchhere {
+    display: block;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .searchhere input {
+    flex: 1;
+    height: 3rem;
+    margin: 0 1rem;
+  }
+  .searchhere button {
+    flex: 1;
+    height: 3rem;
+    margin: 0 1rem;
+  }
+
+  .slideleft ul {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .slideleft li {
+    padding: 2rem;
+  }
+  .uparrow {
+    right: 10;
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+  .navbar__options a {
+    color: white;
+    font-size: 1.4rem;
+  }
+  .Aboutlogo {
+    display: none;
+  }
+  .navbar h1 {
+    margin-right: 4rem;
+    font-size: 3rem;
+    font-weight: 900;
+  }
+}

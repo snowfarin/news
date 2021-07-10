@@ -1,0 +1,20 @@
+.othernews a {
+  text-decoration: none;
+}
+.othernews > h1 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.othernews-pack > h1 {
+  color: rgb(56, 30, 206);
+}
+.othernews-pack h2 {
+  color: rgb(83, 83, 83);
+}
+.othernews-pack {
+  min-height: 10rem;
+  width: 100%;
+  border-bottom: 1px dotted black;
+}
